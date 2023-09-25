@@ -6,5 +6,5 @@ Docente: CARDENAS MARIÑO FLOR CAGNIY
 Integrantes:
 - Samuel Cano (U202116508@upc.edu.pe)
 - Eduardo Puglisevic ()
-- Nicolás Guerrero ()
+- Nicolás Guerrero (U202115535@upc.edu.pe)
 - Iam Álvarez ()
