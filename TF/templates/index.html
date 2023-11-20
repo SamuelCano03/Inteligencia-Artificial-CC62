@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificacion de Sentimientos</title>
+    <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <div class="search-logo">
+            <div class="search-adjustment-cantainer">
+                <div class="search">
+                    <p class="unh">Opinen Ustedes 👀🫶 #pitucas #upc #dechill ...</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="auto" viewBox="0 0 20 22">
+                        <path fill="#000000" fill-rule="evenodd"
+                            d="M9 3.5a5.5 5.5 0 1 0 0 11a5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+            <img src="{{url_for('static', filename='img/logo-upc.png')}}" alt="Logo UPC">
+        </div>
+
+        <div class="tiktok-comentario">
+            <div class="tiktok-container">
+                <blockquote class="tiktok-embed"
+                    cite="https://www.tiktok.com/@pedro.ceroyalas/video/7172389016409705733"
+                    data-video-id="7172389016409705733" style="max-width: 500px;min-width: 335px; min-height: 583px;max-height: auto;">
+                    <section > <a target="_blank" title="@pedro.ceroyalas"
+                            href="https://www.tiktok.com/@pedro.ceroyalas?refer=embed">@pedro.ceroyalas</a> Opinen
+                        Ustedes 👀🫶 <a title="pitucas" target="_blank"
+                            href="https://www.tiktok.com/tag/pitucas?refer=embed">#pitucas</a> <a title="upc"
+                            target="_blank" href="https://www.tiktok.com/tag/upc?refer=embed">#upc</a> <a
+                            title="dechill" target="_blank"
+                            href="https://www.tiktok.com/tag/dechill?refer=embed">#dechill</a> <a title="manyas"
+                            target="_blank" href="https://www.tiktok.com/tag/manyas?refer=embed">#manyas</a>
+                        <a title="pitucos" target="_blank"
+                            href="https://www.tiktok.com/tag/pitucos?refer=embed">#pitucos</a> <a title="foryou"
+                            target="_blank" href="https://www.tiktok.com/tag/foryou?refer=embed">#foryou</a> <a
+                            title="university" target="_blank"
+                            href="https://www.tiktok.com/tag/university?refer=embed">#university</a> <a title="baile"
+                            target="_blank" href="https://www.tiktok.com/tag/baile?refer=embed">#baile</a> <a
+                            title="dance" target="_blank" href="https://www.tiktok.com/tag/dance?refer=embed">#dance</a>
+                        <a title="followme" target="_blank"
+                            href="https://www.tiktok.com/tag/followme?refer=embed">#followme</a> <a target="_blank"
+                            title="♬ sonido original - PEDRO CEROYALAS"
+                            href="https://www.tiktok.com/music/sonido-original-7172389015147383558?refer=embed">♬ sonido
+                            original - PEDRO CEROYALAS</a>
+                    </section>
+                </blockquote>
+            </div>
+            <div class="comentario-container">
+                <img src="{{url_for('static', filename='img/shape.png')}}" alt="Logo UPC">
+                <div class="texto-superpuesto">
+                    <p id="miTexto">¡Déjanos tus comentarios sobre el video!</p>
+                    <div >
+                        <form action="/result" method="POST">
+                            <input type="text"    name="miValor" id="miValor">
+                            <input type="submit"   value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="auto" viewBox="0 0 24 24">
+                <path fill="#000000"
+                    d="M16.288 9.428A4.999 4.999 0 0 0 7 12a4.999 4.999 0 0 0 9.288 2.572l-1.715-1.028A3 3 0 1 1 12 9c1.093 0 2.05.584 2.573 1.457l1.715-1.03ZM22 12c0-5.52-4.48-10-10-10S2 6.48 2 12s4.48 10 10 10s10-4.48 10-10ZM4 12c0-4.42 3.58-8 8-8s8 3.58 8 8s-3.58 8-8 8s-8-3.58-8-8Z" />
+            </svg>
+            <p>Copyright - all rights <br> reserved 2023</p>
+        </div>
+
+        <div class="suggestion-social-container">
+            <div class="suggestion-container">
+                <input placeholder="Enter a suggestion">
+                <a href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="auto" viewBox="0 0 30 20">
+                        <g fill="#ffffff">
+                            <path d="M20 5H8v4H6V3h16v18H6v-6h2v4h12V5Z" />
+                            <path
+                                d="m13.074 16.95l-1.414-1.414L14.196 13H2v-2h12.196L11.66 8.465l1.414-1.415l4.95 4.95l-4.95 4.95Z" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="media-container">
+                <a href="https://www.facebook.com/" class="enlace-sin-borde">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                        <path fill="#000000"
+                            d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02Z" />
+                    </svg>
+                </a>
+
+                <a href="https://github.com/" class="enlace-sin-borde">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                        <path fill="#000000"
+                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z" />
+                    </svg>
+                </a>
+
+                <a href="https://www.instagram.com/" class="enlace-sin-borde">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                        <path fill="#000000"
+                            d="M12 9.52A2.48 2.48 0 1 0 14.48 12A2.48 2.48 0 0 0 12 9.52Zm9.93-2.45a6.53 6.53 0 0 0-.42-2.26a4 4 0 0 0-2.32-2.32a6.53 6.53 0 0 0-2.26-.42C15.64 2 15.26 2 12 2s-3.64 0-4.93.07a6.53 6.53 0 0 0-2.26.42a4 4 0 0 0-2.32 2.32a6.53 6.53 0 0 0-.42 2.26C2 8.36 2 8.74 2 12s0 3.64.07 4.93a6.86 6.86 0 0 0 .42 2.27a3.94 3.94 0 0 0 .91 1.4a3.89 3.89 0 0 0 1.41.91a6.53 6.53 0 0 0 2.26.42C8.36 22 8.74 22 12 22s3.64 0 4.93-.07a6.53 6.53 0 0 0 2.26-.42a3.89 3.89 0 0 0 1.41-.91a3.94 3.94 0 0 0 .91-1.4a6.6 6.6 0 0 0 .42-2.27C22 15.64 22 15.26 22 12s0-3.64-.07-4.93Zm-2.54 8a5.73 5.73 0 0 1-.39 1.8A3.86 3.86 0 0 1 16.87 19a5.73 5.73 0 0 1-1.81.35H8.94A5.73 5.73 0 0 1 7.13 19a3.51 3.51 0 0 1-1.31-.86A3.51 3.51 0 0 1 5 16.87a5.49 5.49 0 0 1-.34-1.81V8.94A5.49 5.49 0 0 1 5 7.13a3.51 3.51 0 0 1 .86-1.31A3.59 3.59 0 0 1 7.13 5a5.73 5.73 0 0 1 1.81-.35h6.12a5.73 5.73 0 0 1 1.81.35a3.51 3.51 0 0 1 1.31.86A3.51 3.51 0 0 1 19 7.13a5.73 5.73 0 0 1 .35 1.81V12c0 2.06.07 2.27.04 3.06Zm-1.6-7.44a2.38 2.38 0 0 0-1.41-1.41A4 4 0 0 0 15 6H9a4 4 0 0 0-1.38.26a2.38 2.38 0 0 0-1.41 1.36A4.27 4.27 0 0 0 6 9v6a4.27 4.27 0 0 0 .26 1.38a2.38 2.38 0 0 0 1.41 1.41a4.27 4.27 0 0 0 1.33.26h6a4 4 0 0 0 1.38-.26a2.38 2.38 0 0 0 1.41-1.41a4 4 0 0 0 .26-1.38V9a3.78 3.78 0 0 0-.26-1.38ZM12 15.82A3.81 3.81 0 0 1 8.19 12A3.82 3.82 0 1 1 12 15.82Zm4-6.89a.9.9 0 0 1 0-1.79a.9.9 0 0 1 0 1.79Z" />
+                    </svg>
+                </a>
+
+                <a href="https://www.youtube.com/" class="enlace-sin-borde">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 20 22">
+                        <path fill="#000000"
+                            d="M11.603 9.833L9.357 8.785C9.161 8.694 9 8.796 9 9.013v1.974c0 .217.161.319.357.228l2.245-1.048c.197-.092.197-.242.001-.334zM10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4zm0 13.5c-4.914 0-5-.443-5-3.9s.086-3.9 5-3.9s5 .443 5 3.9s-.086 3.9-5 3.9z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    
+</body>
+
+</html>
