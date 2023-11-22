@@ -4,6 +4,7 @@ from keras.models import load_model
 import re
 import spacy
 nlp = spacy.load('es_core_news_sm')
+import os
 
 def corregir_texto(texto):
     # Patrones a buscar y sus reemplazos
@@ -71,7 +72,7 @@ def norm(cadena):
     cadena=filter_words(cadena)
     return cadena
 
-model = load_model('modeloIA.keras')
+model = load_model("modelo_entrenado.tf")
 
 
 
@@ -92,7 +93,7 @@ def result():
         mytest=[msg]
 
         mytest=np.array(mytest)
-        mymodel=load_model("modeloIA.keras")
+        mymodel = load_model("modelo_entrenado.tf")
         predictions = mymodel.predict(mytest)
 
         # Convertir las predicciones a etiquetas binarias (0 o 1)
